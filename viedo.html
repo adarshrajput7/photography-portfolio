@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Video</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            
+        }
+        
+        #divv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100vh;
+        }
+
+        #divv video {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @media (max-width: 700px) {
+            #divv video{
+                width: 100%;
+                height: 50vh;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="divv">
+        <video autoplay  loop>
+            <source src="images/Demo video.mp4" type="video/webm">
+            Your browser does not support the video tag.
+          </video>
+    </div>
+    
+</body>
+</html>
